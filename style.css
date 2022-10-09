@@ -317,7 +317,7 @@ SP仕様
   }
   .program-language {
     margin: 40px 0 30px;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
   }
   .about-text {
     margin-bottom: 30px;
@@ -340,7 +340,7 @@ SP仕様
   }
   /* projects-------------------*/
   .sp-content-title {
-    margin: 40px 0 30px;
+    margin: 40px 0 5px;
     text-align: center;
     font-size:3.0rem;
     display: block;
