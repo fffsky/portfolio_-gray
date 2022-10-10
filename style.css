@@ -9,8 +9,8 @@ body {
   font-size: 1.6rem;
 }
 img {
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
   max-height: 100%;
 }
 li {
@@ -24,7 +24,7 @@ a {
 common
 ----------------------- */
 .section-title {
-  padding-top: 85px;
+  padding-top: 55px;
   margin-bottom: 30px;
   font-size: 5.0rem;
   font-weight: 100;
@@ -35,34 +35,24 @@ common
 /* ----------------------------------------
 header
 ----------------------------------------- */
-.header {
+header {
   background: radial-gradient(#a7a9a6, #6d6f6c) fixed;
   position: relative;
 }
-/* navigation -----------------------*/
 .navigation{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .navigation-list {
   background-color: #fff;
-  width: auto;
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 5px;
 }
 .navigation-list img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin: 0 auto;
-}
-/* PC表示 */
-.pc-nav {
-  display: block;
-  margin: 0 auto;
-}
-/* sp非表示 */
-.sp-nav {
-  display: none;
 }
 .navigation-list a {
   font-size: 1.6rem;
@@ -71,57 +61,54 @@ header
   display: block;
 }
 /* main-visual---------------------- */
-.name-wrapper {
+.fv-name {
   position: absolute;
   top: 18%;
   left: 10%;
   color: #fff;
   letter-spacing: 1px;
 }
-.name-wrapper h1 {
-  font-size: 16rem;
+.fv-name h1 {
+  font-size: 14rem;
   line-height: 1;
   font-weight: 100;
 }
-.name-wrapper p {
+.fv-name p {
   font-size: 3.0rem;
   font-weight: 100;
 }
-.fv {
+.fv-img {
   text-align: end;
-  margin-right: 7%;
   font-size: 0;
-  width: 100%;
-}
-.fv img {
-  width: 55%;
   padding-top: 3.2%;
 }
-
+.fv-img img {
+  width: 55%;
+}
 /* ---------------------------------------
 About
 ---------------------------------------- */
-.about {
-  display: flex;
-  position: relative;
+.about{
   overflow: hidden;
 }
-.program-language {
-  font-size: 2.8rem;
-  margin-bottom: 30px
+.about-wrapper {
+  display: flex;
+  position: relative;
 }
-.about-text {
-  font-size: 1.8rem;
+.program-language {
+  font-size: 2.3rem;
+  margin-bottom: 40px
+}
+.about-detail {
   margin-bottom: 40px;
 }
-.about p {
-  margin-bottom: 1.6rem;
+.support{
+  font-size: 1.5rem;
 }
 .icon-list {
   display: flex;
   padding-bottom: 80px;
 }
-
 .icon-list img {
   width: 14%;
   margin: 15px 0 0;
@@ -129,9 +116,9 @@ About
 /* PC画像 -----------------------------*/
 .about-img img {
   position: absolute;
-  top: 6.5%;
-  right: -22%;
-  width: 60%;
+  top: -10.5%;
+  right: -12%;
+  width: 55%;
   object-fit: cover;
 }
 /* -----------------------------------------
@@ -141,38 +128,32 @@ Projects
   background: radial-gradient(#a7a9a6, #6d6f6c) fixed;
   color: #fff;
 }
-.projects {
-  margin-bottom: 9.63vw;
-}
 .br-sp {
   display: none;
 }
-.container {
-  display: flex;
-  font-size: 0px;
-}
-.project-img img {
-  height: 45.8vw;
-  width: 45.8vw;
-}
 .project-list {
-  padding-left: 45px;
-  padding-top: 40px;
+  display: flex;
+}
+.project-img , .project-text{
+  width: 50%;
+}
+.project-img{
+  font-size: 0;
+}
+.project-text {
+  padding-left: 70px;
+  padding-top: 80px;
 }
 .project-list h3,h4 {
   font-size: 3rem;
   font-weight: 100;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
-.project-img , .project-list{
-  width: 50%;
-}
-.project-text {
+.project-text-detail {
   margin-bottom: 30px;
 }
 .project-list p {
-  font-size: 1.8rem;
-  line-height: 2;
+  line-height: 1.8;
 }
 .project-link {
   display: flex;
@@ -264,30 +245,26 @@ SP仕様
     display: block;
   }
   /* main-visual -------------------- */
-  .main-visual {
-    position: relative;
-    text-align: center;
-  }
-  .name-wrapper {
+  .fv-name {
     position: absolute;
-    top: 22%;
+    top: 295px;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
     letter-spacing: 3px;
   }
-  .name-wrapper h1 {
+  .fv-name h1 {
     font-size: 8rem;
     letter-spacing: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
-  .fv {
+  .fv-img {
     text-align: center;
     margin: 0 auto;
     font-size: 0;
   }
-  .fv img {
-    width: 55%;
+  .fv-img img {
+    width: 72%;
     margin-top: 380px;
     width: 100%;
   }
@@ -340,7 +317,7 @@ SP仕様
   }
   /* projects-------------------*/
   .sp-content-title {
-    margin: 40px 0 5px;
+    margin: 40px 0 15px;
     text-align: center;
     font-size:3.0rem;
     display: block;
@@ -351,6 +328,9 @@ SP仕様
   }
   .br-sp {
     display: block;
+  }
+  .project-list{
+    flex-direction: column;
   }
   .project-img {
     width: 90%;
@@ -366,30 +346,18 @@ SP仕様
     text-align: center;
   }
   .project-list h4 {
-    font-size: 4.47vw;
-    margin-bottom: 3.42vw;
-    margin-top: 7.89vw;
+    font-size: 2.4rem;
+    margin: 20px 0;
   }
   .project-text {
-    margin-top: 6.05vw;
-  }
-  .project-text p {
-    font-size: 3.42vw;
-  }
-  .project-account p {
-    font-size: 3.94vw;
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px 0;
   }
   .project-link {
     justify-content: center;
-    font-size: 3.68vw;
   }
-  .twitter {
-    margin-bottom: 17.63vw;
-  }
-  .netflix {
-    margin-bottom: 12.3vw;
-    margin: 0;
-  }
+
   /* contact ----------------------*/
   .contact-list {
     justify-content: center;
