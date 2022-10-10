@@ -247,16 +247,19 @@ SP仕様
   /* main-visual -------------------- */
   .fv-name {
     position: absolute;
-    top: 295px;
+    top: 215px;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
     letter-spacing: 3px;
   }
   .fv-name h1 {
-    font-size: 8rem;
+    font-size: 7rem;
     letter-spacing: 4px;
     margin-bottom: 20px;
+  }
+  .fv-name p{
+    font-size: 1.4rem;
   }
   .fv-img {
     text-align: center;
@@ -265,7 +268,7 @@ SP仕様
   }
   .fv-img img {
     width: 72%;
-    margin-top: 380px;
+    margin-top: 250px;
     width: 100%;
   }
 
