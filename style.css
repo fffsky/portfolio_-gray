@@ -190,12 +190,13 @@ contacts
   margin-top: 10px;
 }
 .contact-list img {
-  width: 1.56vw;
-  height: 1.56vw;
+  width: 25px;
+  height: 25px;
   margin-right: 15px;
 }
-.contact-list p {
-  font-size: 1.56vw;
+.contact-list a {
+  color: #fff;
+  font-size: 1.8rem;
 }
 .pc-words {
   display: block;
@@ -205,10 +206,10 @@ footer
 ------------------------------------------- */
 #footer {
   background-color: #858784;
-  color: #fff;
   width: 100%;
 }
 #footer p {
+  color: #fff;
   text-align: center;
   margin: 0;
   padding: 10px 0;
@@ -366,7 +367,7 @@ SP仕様
     justify-content: center;
     margin-top: 10px;
   }
-  .contact-list p {
+  .contact-list a {
     font-size:  1.8rem;
   }
   .contact-list img {
